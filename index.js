@@ -21,6 +21,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
 // Menambahkan efek fade-in untuk setiap section
 const sections = document.querySelectorAll('section');
 
@@ -61,3 +83,17 @@ buttons.forEach(button => {
         button.style.transform = 'scale(1)';
     });
 });
+
+const text = "Hi, I'm Muhammad Zaim El Yafi";
+let index = 0;
+const typingTextElement = document.getElementById("typing-text");
+
+function type() {
+    if (index < text.length) {
+        typingTextElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // kecepatan mengetik (dalam milidetik)
+    }
+}
+
+type(); // memulai efek mengetik
