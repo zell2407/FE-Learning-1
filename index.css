@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #343a40; /* Warna gelap untuk header */
+    background-color: #0080ff; /* Warna gelap untuk header */
 }
 
 .navbar-nav .nav-link {
@@ -49,11 +49,10 @@ h1, h2, h3 {
 
 footer {
     padding: 20px 0; /* Menambahkan padding atas dan bawah */
-    position: relative; /* Jika Anda ingin mengatur posisi footer */
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333; /* Warna gelap untuk footer */
-    color: #ffffff;
+    position: relative; /* Posisi relatif untuk footer */
+    text-align: center; /* Teks di tengah */
+    background-color: #343a40; /* Ubah warna footer menjadi sama dengan navbar */
+    color: #ffffff; /* Warna teks footer */
 }
 
 .fade-in {

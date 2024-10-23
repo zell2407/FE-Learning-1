@@ -1,86 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Menghubungkan file CSS Bootstrap dari CDN untuk styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menghubungkan file CSS kustom -->
     <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaim El - Web Developer</title>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding sebagai UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsif -->
+    <title>Zaim El - Web Developer</title> <!-- Judul halaman yang ditampilkan di tab browser -->
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-left">
-            <div class="container-fluid flex-column">
-                <ul class="navbar-nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects"><span>Projects</span></a></li> <!-- Menghapus dropdown -->
-                    <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+        <nav class="navbar navbar-dark bg-dark fixed-left"> <!-- Navbar dengan latar belakang gelap yang tetap di kiri -->
+            <div class="container-fluid flex-column"> <!-- Container untuk elemen navbar -->
+                <ul class="navbar-nav flex-column"> <!-- Daftar navigasi vertikal -->
+                    <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li> <!-- Tautan ke bagian Home -->
+                    <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li> <!-- Tautan ke bagian About -->
+                    <li class="nav-item"><a class="nav-link" href="#projects"><span>Projects</span></a></li> <!-- Tautan ke bagian Projects -->
+                    <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li> <!-- Tautan ke bagian Contact -->
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="text-center fade-in">
+    <section id="home" class="text-center fade-in"> <!-- Bagian Home -->
         <div class="container">
-            <h1><span id="typing-text"></span></h1>
-            <p>Web Developer & Designer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <h1><span id="typing-text"></span></h1> <!-- Tempat untuk teks yang akan diketik -->
+            <p>Web Developer & Designer</p> <!-- Deskripsi pekerjaan -->
+            <a href="#contact" class="btn">Get in Touch</a> <!-- Tombol untuk menghubungi -->
         </div>
     </section>
     
-    <section id="about" class="text-center fade-in">
+    <section id="about" class="text-center fade-in"> <!-- Bagian About -->
         <div class="container">
-            <h2>About Me</h2>
-            <p>Halo! Saya Muhammad Zaim El Yafi, seorang pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan React.</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <h2>About Me</h2> <!-- Judul About -->
+            <p>Halo! Saya Muhammad Zaim El Yafi, seorang pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan React.</p> <!-- Deskripsi diri -->
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..."</p> <!-- Konten placeholder -->
         </div>
     </section>
     
-    <section id="projects" class="text-center fade-in">
+    <section id="projects" class="text-center fade-in"> <!-- Bagian Projects -->
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Projects</h2> <!-- Judul Projects -->
             <div class="project">
-                <h3>Project 1: E-commerce Website</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h3>Project 1: E-commerce Website</h3> <!-- Judul proyek 1 -->
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..."</p> <!-- Deskripsi proyek 1 -->
             </div>
             <div class="project">
-                <h3>Project 2: Chatbot Application</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h3>Project 2: Chatbot Application</h3> <!-- Judul proyek 2 -->
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..."</p> <!-- Deskripsi proyek 2 -->
             </div>
             <div class="project">
-                <h3>Project 3: Portfolio Website</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h3>Project 3: Portfolio Website</h3> <!-- Judul proyek 3 -->
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..."</p> <!-- Deskripsi proyek 3 -->
             </div>
         </div>
     </section>
     
-    <section id="contact" class="text-center fade-in">
+    <section id="contact" class="text-center fade-in"> <!-- Bagian Contact -->
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Hubungi saya melalui email atau media sosial.</p>
-            <a href="mailto:zaimelyafi@gmail.com" class="btn">Email</a>
-            <a href="https://www.instagram.com/zaimelyafi/" class="btn">Instagram</a>
+            <h2>Get in Touch</h2> <!-- Judul Contact -->
+            <p>Hubungi saya melalui email atau media sosial.</p> <!-- Instruksi untuk menghubungi -->
+            <a href="mailto:zaimelyafi@gmail.com" class="btn">Email</a> <!-- Tautan untuk mengirim email -->
+            <a href="https://www.instagram.com/zaimelyafi/" class="btn">Instagram</a> <!-- Tautan ke Instagram -->
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center">
-        <p>&copy; 2024 M. Zaim El Yafi</p>
+    <footer class="footer bg-dark text-center"> <!-- Bagian footer -->
+        <p>&copy; 2024 Muhammad Zaim El Yafi</p> <!-- Hak cipta -->
     </footer>
 
+    <!-- Menghubungkan file JavaScript Bootstrap dari CDN untuk fungsi -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Menghubungkan file JavaScript kustom -->
     <script src="index.js"></script>
 </body>
 </html>
