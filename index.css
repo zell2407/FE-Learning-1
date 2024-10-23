@@ -90,10 +90,16 @@ footer {
 }
 
 .nav-link {
+    transition: background-color 0.3s, transform 0.3s;
     padding: 15px; /* Ruang dalam untuk tautan */
     white-space: nowrap; /* Mencegah teks membungkus */
     overflow: hidden; /* Menyembunyikan teks yang tidak muat */
     text-overflow: ellipsis; /* Menampilkan ellipsis untuk teks yang terpotong */
+}
+
+.nav-link.clicked {
+    background-color: #343a40; /* Ubah warna latar belakang saat diklik */
+    transform: scale(1.1); /* Efek skala saat diklik */
 }
 
 .nav-link span {

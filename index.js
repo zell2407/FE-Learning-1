@@ -9,6 +9,18 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            // Hapus kelas 'clicked' dari semua link
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('clicked'));
+            
+            // Tambahkan kelas 'clicked' ke link yang diklik
+            this.classList.add('clicked');
+        });
+    });
+});
+
 // Menambahkan efek fade-in untuk setiap section
 const sections = document.querySelectorAll('section');
 
