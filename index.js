@@ -70,7 +70,7 @@ sections.forEach(section => {
 
 // Menampilkan alert saat tombol "Get in Touch" diklik
 document.querySelector('.btn').addEventListener('click', function() {
-    alert('Terima kasih telah menghubungi saya! Saya akan segera merespons.'); // Menampilkan pesan terima kasih
+    alert('Silahkan menghubungi saya, di laman yang sudah disediakan. Saya akan segera merespons.'); // Menampilkan pesan terima kasih
 });
 
 // Menambahkan efek hover pada tombol

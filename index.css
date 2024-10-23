@@ -1,53 +1,52 @@
-body {
+body { /* Mengatur tampilan Body */
     background-color: #f0f0f0; /* Warna dasar */
-    background-image: radial-gradient(circle, #000000 10%, transparent 10%), radial-gradient(circle, #00bbff 10%, transparent 10%);
+    background-image: radial-gradient(circle, #000000 10%, transparent 10%), radial-gradient(circle, #00bbff 10%, transparent 10%);  /* Gambar latar belakang */
     background-position: 0 0, 5px 5px; /* Mengatur posisi pola */
     background-size: 10px 10px; /* Ukuran pola */
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;  /* Font yang digunakan */
     color: #333; /* Warna teks yang gelap untuk kontras */
-    margin: 0;
-    body {
-        margin-left: 240px; /* Sesuaikan dengan lebar navbar dan footer */
-    margin-bottom: 50px; /* Memberikan ruang untuk footer */
-    }
+    margin: 0;  /* Menghilangkan margin */
 }
 
-header {
+header {  /* Mengatur tampilan Header */
+
     background-color: #0080ff; /* Warna gelap untuk header */
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link {  /* Mengatur tampilan link */
     color: #ffffff; /* Warna teks putih untuk tautan */
 }
 
-#home {
+#home {  /* Mengatur tampilan halaman utama */
     padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
 }
 
-.container {
+.container {   /* Mengatur tampilan kontainer */
+
     padding: 40px 20px; /* Ruang yang cukup di dalam kontainer */
 }
 
-h1, h2, h3 {
+h1, h2, h3 {   /* Mengatur tampilan judul */
+
     margin-bottom: 20px; /* Ruang bawah untuk heading */
 }
 
-.btn {
+.btn {   /* Mengatur tampilan tombol */
     background-color: #007bff; /* Warna tombol biru */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;  /* Warna teks putih */
+    border: none;  /* Hapus garis pinggir */
+    padding: 10px 20px;  /* Ukuran tombol */
+    text-decoration: none;   /* Hapus efek tautan */
+    border-radius: 5px;   /* Bentuk tombol */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Animasi tombol */
 }
 
-.btn:hover {
+.btn:hover {    /* Mengatur tampilan tombol ketika dihover */
     background-color: #0056b3; /* Warna tombol saat hover */
     transform: scale(1.05); /* Efek zoom saat hover */
 }
 
-footer {
+footer {    /* Mengatur tampilan footer */
     padding: 20px 0; /* Menambahkan padding atas dan bawah */
     position: relative; /* Posisi relatif untuk footer */
     text-align: center; /* Teks di tengah */
@@ -55,107 +54,108 @@ footer {
     color: #ffffff; /* Warna teks footer */
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.fade-in {   /* Mengatur tampilan animasi fade-in */
+    opacity: 0;  /* Mulai dengan opacity 0 */
+    transform: translateY(20px);  /* Posisi awal di bawah */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;   /* Animasi */
 }
 
-.fade-in-active {
-    opacity: 1;
-    transform: translateY(0);
+.fade-in-active {   /* Mengatur tampilan animasi fade-in saat aktif */
+    opacity: 1;   /* Akhirnya dengan opacity 1 */
+    transform: translateY(0);   /* Posisi akhir di atas */
+
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn {    /* Animasi fade-in */
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1;   /* Akhirnya dengan opacity 1 */
+        transform: translateY(0);    /* Posisi akhir di atas */
     }
 }
 
-.fixed-left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+.fixed-left {    /* Mengatur tampilan sidebar */
+    position: fixed;  /* Posisi fixed untuk sidebar */
+    top: 0;   /* Posisi atas */
+    left: 0;   /* Posisi kiri */
+    height: 100%;   /* Tinggi 100% */
     width: 60px; /* Lebar minimal navbar */
-    z-index: 1000;
+    z-index: 1000;  /* Prioritas tinggi */
     transition: width 0.3s ease; /* Transisi untuk efek hover */
 }
 
-.fixed-left:hover {
+.fixed-left:hover {     /* Mengatur tampilan sidebar saat hover */
     width: 200px; /* Lebar saat hover */
 }
 
-.navbar-nav {
+.navbar-nav {     /* Mengatur tampilan navbar */
     width: 100%; /* Memastikan navbar memenuhi lebar */
 }
 
-.nav-link {
-    transition: background-color 0.3s, transform 0.3s;
+.nav-link {      /* Mengatur tampilan link navbar */
+    transition: background-color 0.3s, transform 0.3s;  /* Transisi untuk efek hover */
     padding: 15px; /* Ruang dalam untuk tautan */
     white-space: nowrap; /* Mencegah teks membungkus */
     overflow: hidden; /* Menyembunyikan teks yang tidak muat */
     text-overflow: ellipsis; /* Menampilkan ellipsis untuk teks yang terpotong */
 }
 
-.nav-link.clicked {
+.nav-link.clicked {   /* Mengatur tampilan link navbar saat diklik */
     background-color: #34343400; /* Ubah warna latar belakang saat diklik */
     transform: scale(1.1); /* Efek skala saat diklik */
 }
 
-.nav-link span {
+.nav-link span {      /* Mengatur tampilan teks link */
     display: none; /* Menyembunyikan teks tambahan pada lebar minimal */
 }
 
-.fixed-left:hover .nav-link span {
+.fixed-left:hover .nav-link span {      /* Mengatur tampilan teks link saat hover */
     display: inline; /* Menampilkan teks saat hover */
 }
 
-.dropdown-menu {
+.dropdown-menu {      /* Mengatur tampilan dropdown */
     background-color: #343a40; /* Warna latar dropdown */
 }
 
-.dropdown-item {
+.dropdown-item {        /* Mengatur tampilan item dropdown */
     color: #ffffff; /* Warna teks untuk item dropdown */
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover {    /* Mengatur tampilan item dropdown saat hover */
     background-color: #007bff; /* Warna saat hover pada item dropdown */
 }
 
-.typing {
-    border-right: 2px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+.typing {  /* Mengatur tampilan teks yang mengetik */
+    border-right: 2px solid;  /* Garis samping untuk efek mengetik */
+    white-space: nowrap;  /* Mencegah teks membungkus */
+    overflow: hidden;   /* Menyembunyikan teks yang tidak muat */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;  /* Animasi mengetik */
 }
 
-@keyframes typing {
+@keyframes typing {   /* Animasi mengetik */
     from {
-        width: 0;
+        width: 0;   /* Mulai dari lebar 0 */
     }
     to {
-        width: 100%;
+        width: 100%;   /* Sampai lebar 100% */
     }
 }
 
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
+@keyframes blink-caret {   /* Animasi blink */
+    from, to {    /* Mulai dan akhir animasi */
+        border-color: transparent;  /* Warna garis samping */
     }
-    50% {
+    50% {     /* Pada 50% animasi */
         border-color: black; /* Ganti dengan warna yang sesuai dengan tema Anda */
     }
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+.fade-in {  /* Mengatur tampilan animasi masuk */
+    opacity: 0;  /* Mulai dari opacity 0 */
+    transform: translateY(20px);   /* Posisi awal */
+    transition: opacity 0.6s ease, transform 0.6s ease;   /* Animasi masuk */
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.fade-in.visible {   /* Mengatur tampilan animasi masuk saat visible */
+    opacity: 1;   /* Akhir dari opacity 1 */
+    transform: translateY(0);    /* Posisi akhir */
 }
