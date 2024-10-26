@@ -46,6 +46,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const projects = document.querySelectorAll('.project');
+    
+    function checkVisibility() {
+        const triggerBottom = window.innerHeight / 5 * 4; // Titik di mana elemen mulai terlihat
+        
+        projects.forEach((project, index) => {
+            const box = project.getBoundingClientRect();
+            const isVisible = box.top < triggerBottom && box.bottom > 0;
+
+            // Tambahkan kelas 'visible' dengan efek bergantian
+            if (isVisible) {
+                if (index % 2 === 0) {
+                    project.classList.add('visible'); // Proyek genap muncul dari kanan
+                } else {
+                    project.classList.add('visible'); // Proyek ganjil muncul dari kiri
+                }
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Cek visibilitas saat halaman dimuat
+});
+
 // Menambahkan efek fade-in untuk setiap section
 const sections = document.querySelectorAll('section');
 

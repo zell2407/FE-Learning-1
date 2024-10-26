@@ -159,3 +159,14 @@ footer {    /* Mengatur tampilan footer */
     opacity: 1;   /* Akhir dari opacity 1 */
     transform: translateY(0);    /* Posisi akhir */
 }
+
+.project {
+    opacity: 0; /* Mulai dengan transparan */
+    transform: translateX(100%); /* Mulai dari luar layar di kanan */
+    transition: opacity 1s ease, transform 1s ease; /* Transisi untuk efek */
+}
+
+.project.visible {
+    opacity: 1; /* Menjadi terlihat */
+    transform: translateX(0); /* Bergerak ke posisi normal */
+}
