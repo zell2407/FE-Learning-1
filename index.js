@@ -101,3 +101,13 @@ function type() {
 }
 
 type(); // memulai efek mengetik
+
+let x = 0;
+
+function animateBackground() {
+    x += 1; // Ubah nilai ini untuk mengatur kecepatan
+    document.body.style.backgroundPosition = `${x}px 0`;
+    requestAnimationFrame(animateBackground);
+}
+
+animateBackground();
